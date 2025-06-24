@@ -108,7 +108,7 @@ fun EditTaskScreen(
                                     id = taskId,
                                     title = title,
                                     description = description,
-                                    isCompleted = task?.isCompleted ?: false
+                                    isCompleted = isDone
                                 )
                             )
                             coroutineScope.launch {
@@ -126,3 +126,4 @@ fun EditTaskScreen(
             }
         })
 }
+

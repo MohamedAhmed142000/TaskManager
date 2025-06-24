@@ -150,7 +150,7 @@ fun TaskItem(task: Task, onDelete: () -> Unit, onEdit: () -> Unit, onUpdate: (Ta
             .fillMaxWidth()
             .padding(vertical = 6.dp),
         colors = CardDefaults.cardColors(
-            containerColor = Color(0xFFF1F1F1) // لون خلفية الكارت
+            containerColor = Color(0xFF03A9F4) // لون خلفية الكارت
         ),
         elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
     ) {
