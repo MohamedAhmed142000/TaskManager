@@ -4,16 +4,16 @@ import com.example.taskmanager.domain.model.Task
 import kotlinx.coroutines.flow.Flow
 
 interface TaskRepository {
-    //تجيب كل المهام (بتبعت Flow يعني بيانات حية تتحدث تلقائيًا)
+    //Get all tasks (Flow means live data that is automatically updated)
     fun getTasks(): Flow<List<Task>>
 
-    //تضيف مهمة جديدة
+    //add new task
     suspend fun addTask(task: Task)
 
-    //تعدّل بيانات مهمة موجودة
+    //update task
     suspend fun updateTask(task: Task)
 
-    // تمسح مهمة حسب رقمها
+    // delete task with id
     suspend fun deleteTask(id: Int)
 
 }

@@ -3,7 +3,7 @@ package com.example.taskmanager.data.local
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-//يمثل الجدول في قاعدة البيانات
+//shapes of tables in database
 @Entity(tableName = "tasks")
 data class TaskEntity(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,

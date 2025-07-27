@@ -70,4 +70,10 @@ class TaskViewModel(
             updateTaskUseCase(task)
         }
     }
+    private val _showOnlyIncomplete = MutableStateFlow(false)
+    val showOnlyIncomplete = _showOnlyIncomplete.asStateFlow()
+
+    fun toggleShowOnlyIncomplete() {
+        _showOnlyIncomplete.value = !_showOnlyIncomplete.value
+    }
 }

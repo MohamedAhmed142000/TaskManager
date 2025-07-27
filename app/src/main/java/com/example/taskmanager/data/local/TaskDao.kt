@@ -8,7 +8,7 @@ import androidx.room.Query
 import androidx.room.Update
 import kotlinx.coroutines.flow.Flow
 
-//الواجهة اللي فيها استعلامات Room
+//Room
 @Dao
 interface TaskDao {
     @Query("SELECT * FROM tasks")
@@ -17,8 +17,8 @@ interface TaskDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun addTask(task: TaskEntity)
 
-    @Delete
-    fun deleteTask(task: TaskEntity)
+    @Query("DELETE FROM tasks WHERE id = :id")
+    fun deleteTask(id: Int)
 
     @Update
     fun updateTask(task: TaskEntity)

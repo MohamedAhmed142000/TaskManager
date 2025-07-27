@@ -3,7 +3,7 @@ package com.example.taskmanager.data.repo
 import com.example.taskmanager.data.local.TaskEntity
 import com.example.taskmanager.domain.model.Task
 
-//1. أنشئ دوال التحويل بين Task و TaskEntity
+// mapper between  Task and TaskEntity
 fun TaskEntity.toTask(): Task {
     return Task(
         id = id,
