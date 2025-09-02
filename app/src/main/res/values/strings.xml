@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">مهامي</string>
+    <string name="my_tasks_title">مهامي</string>
+    <string name="incomplete_tasks_label">المهام غير المنجزة</string>
+    <string name="add_task_fab_text">+</string>
+    <string name="task_added_snackbar">تمت إضافة المهمة</string>
+    <string name="task_updated_snackbar">تم تعديل المهمة</string>
+    <string name="no_tasks_to_display">لا توجد مهام لعرضها</string>
+    <string name="edit_task_icon_desc">تعديل</string>
+    <string name="delete_task_icon_desc">حذف</string>
+
+    <!-- Add other strings for TaskInputDialog if you have them there -->
+    <string name="dialog_confirm">تأكيد</string>
+    <string name="dialog_dismiss">ألغاء</string>
+    <string name="dialog_title_add">اضافة مهام</string>
+    <string name="dialog_title_edit">تعديل مهام</string>
+    <string name="dialog_task_title_label">العنوان</string>
+    <string name="dialog_task_desc_label">الوصف (اوبشن)</string>
+
+    <!-- <string name="app_name">TaskManager</string> -->
 </resources>

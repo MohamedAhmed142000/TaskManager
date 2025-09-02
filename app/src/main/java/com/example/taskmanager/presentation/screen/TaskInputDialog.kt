@@ -55,7 +55,7 @@ fun TaskInputDialog(
                         onConfirm(title, description)
                     }
                 }
-            , colors = ButtonDefaults.buttonColors( containerColor = Color(0xFF7A7A7A))) {
+                , colors = ButtonDefaults.buttonColors( containerColor = Color(0xFF7A7A7A))) {
                 Text("حفظ")
             }
         },

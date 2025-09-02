@@ -53,7 +53,6 @@ class MainActivity : ComponentActivity() {
                 setContent {
                     TaskManagerTheme {
                         val navController = rememberNavController()
-
                         NavHost(navController = navController, startDestination = "task_list") {
                             composable("task_list") {
                                 TaskScreen(viewModel = viewModel, navController = navController)

@@ -53,6 +53,29 @@ dependencies {
     implementation(libs.androidx.material3)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
+
+    // ✅ Coroutines Test
+    testImplementation (libs.kotlinx.coroutines.test)
+    // Instrumented tests
+    androidTestImplementation (libs.androidx.junit.v130)
+    androidTestImplementation (libs.androidx.espresso.core)
+
+    // Room Testing
+    androidTestImplementation (libs.androidx.room.testing)
+
+
+
+       // ✅ MockK
+    testImplementation (libs.mockk.v1135)
+
+    // ✅ AndroidX Test (لو هنكتب UI Tests)
+    androidTestImplementation( libs.androidx.junit.v115)
+    androidTestImplementation( libs.androidx.espresso.core.v351)
+
+    // ✅ Compose UI Test
+    androidTestImplementation (libs.ui.test.junit4)
+    debugImplementation( "androidx.compose.ui:ui-test-manifest:1.5.1")
+
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
