@@ -20,6 +20,7 @@ The app allows users to manage daily tasks with support for **categories** and *
 
 ## 🏛 Architecture
 
+
 This project follows **Clean Architecture + MVVM** with clear separation of concerns:
 
 - **Domain Layer** → Business logic (UseCases, Models)
